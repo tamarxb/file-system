@@ -81,8 +81,6 @@ Interact with the file system using the following shell commands:
 
 ---
 
-\---
-
 ## Future Roadmap
 
 While the current version (v1.0) is a functional prototype, I plan to implement the following features to further simulate a production-grade file system:

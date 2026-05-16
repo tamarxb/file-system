@@ -66,11 +66,9 @@ Interact with the file system using the following shell commands:
 
 
 ### Build and Run
-
 1. **Clone the repository:**
-
-```bash
-   git clone \[https://github.com/tamarxb/file-system](https://github.com/tamarxb/file-system)
+   ```bash
+   git clone [https://github.com/yosef926/FileSystem](https://github.com/tamarxb/file-system)
    cd file-system
 2. **Compile the engine**
    ```bash
@@ -82,23 +80,17 @@ Interact with the file system using the following shell commands:
 ---
 
 ## Future Roadmap
-
 While the current version (v1.0) is a functional prototype, I plan to implement the following features to further simulate a production-grade file system:
-
-* **File Deletion \& Reclamation:** Implementing a mechanism to free up Inodes and sectors when files are removed.
+* **File Deletion & Reclamation:** Implementing a mechanism to free up Inodes and sectors when files are removed.
 * **Nested Directories:** Expanding the path resolution logic to support deeply nested folder structures.
 * **File Permissions:** Adding Read/Write/Execute flags to the Inode metadata.
 * **Multi-threading Support:** Implementing mutexes to handle concurrent access to the virtual disk.
 
 ## Learning Objectives
-
 Through the development of this project, I gained hands-on experience in:
-
 * **Binary Data Management:** Understanding how to manipulate raw bytes and offsets on a simulated disk.
 * **OS Internals:** Deepening my knowledge of Inode tables, bitmasking for allocation, and sector management.
 * **Low-Level C++:** Mastering pointer arithmetic, memory-safe data structures, and decoupled architecture design.
 
 ## Engineering Insights
-
 The core of this project is the Sector Manager, which simulates raw disk I/O. One of the primary technical challenges was implementing the pointer logic within the Inodes to ensure that as a file grows, the system correctly identifies and links the next available sector on the virtual disk without data overlap.
-

@@ -71,18 +71,12 @@ Interact with the file system using the following shell commands:
 
 ```bash
    git clone \[https://github.com/tamarxb/file-system](https://github.com/tamarxb/file-system)
-   cd FileSystem
-2. \*\*Compile the engine\*\*
-
+   cd file-system
 2. **Compile the engine**
-
-```bash
+   ```bash
    make
-3. \*\*Launch the system\*\*
-
 3. **Launch the system**
-
-```bash
+   ```bash
    /bin/myfs <blkdevname>
 
 ---
